@@ -24,16 +24,52 @@
   list-style: none;
 }
 
-/* Nav */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+
 .conteiner {
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
 
   outline: 2px solid tomato;
 }
+
+/* Nav */
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lists:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  align-items: center;
+
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -48,6 +84,9 @@
   font-family: Raleway, sans-serif;
 }
 .nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -73,30 +112,43 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
 }
-/* Hero */
-.hero {
-  background-color: var(--accent-background-color);
-  width: 1600px;
+.contacts {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.contacts .contacts-list + .contacts-list {
+  margin-left: 50px;
+}
+
+.hero {
+  background-color: var(--accent-background-color);
+}
+.hero-block {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 650px;
+  text-align: center;
 }
 
 /* Sections */
-.advantage,
-.work,
-.our-teem {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -145,13 +197,14 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.85;
-  display: flex;
+  display: block;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
   margin: 0 auto;
-  outline: 2px solid tomato;
   min-width: 200px;
+  border-radius: 4px;
+  border: none;
 }
 .modal-button {
   cursor: pointer;
@@ -174,6 +227,9 @@
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 56px;
 }
 .button.secondary:hover,
 .button.secondary:focus,
@@ -249,6 +305,8 @@
 }
 .footer {
   background-color: var(--accent-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 address {
   font-style: normal;

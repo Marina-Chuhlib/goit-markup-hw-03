@@ -17,31 +17,37 @@
   </head>
   <body class="page">
     <header>
-      <div class="conteiner">
+      <div class="conteiner page-nav">
         <nav>
           <a href="./index.html" class="logo">Web <span class="desc">Studio</span> </a>
           <ul class="nav list">
-            <li><a href="./index.html" class="nav-link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-            <li><a href="#contact" class="nav-link">Контакты</a></li>
+            <li class="nav-lists"><a href="./index.html" class="nav-link current">Студия</a></li>
+            <li class="nav-lists"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li class="nav-lists"><a href="#contact" class="nav-link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
+          <li class="contacts-list">
+            <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+          </li>
+          <li class="contacts-list">
+            <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="modal-button">Заказать услугу</button>
+        <div class="conteiner hero-block">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="modal-button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Advantage -->
       <section class="section advantage">
-        <div class="conteiner">
+        <div class="conteiner advantages">
           <h2 class="section-title visually-hidden">Преимущества</h2>
           <ul class="features list">
             <li>
@@ -78,7 +84,13 @@
           <ul class="preview list">
             <li>
               <a href="./index.html">
-                <img src="./images/box1.jpg" alt="Работа за компьютером" width="370" height="294" />
+                <img
+                  src="./images/box1.jpg"
+                  alt="Работа за компьютером"
+                  width="370"
+                  height="294"
+                  class="img"
+                />
               </a>
             </li>
             <li>
