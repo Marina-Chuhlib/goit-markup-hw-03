@@ -53,6 +53,7 @@ button {
 .page-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav {
@@ -65,6 +66,7 @@ button {
 }
 
 .logo {
+  display: block;
   margin-right: 93px;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -84,6 +86,7 @@ button {
   font-family: Raleway, sans-serif;
 }
 .nav-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
