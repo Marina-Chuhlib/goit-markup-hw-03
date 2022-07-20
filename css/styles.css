@@ -242,14 +242,17 @@ nav {
 .team-list:nth-child(4n) {
   margin-right: 0;
 }
-.team-img {
+/* .team-img {
   margin-bottom: 30px;
-}
+} */
 
 .section.our-teem {
   background-color: var(--secondary-background-color);
 }
 
+.team-profession {
+  padding: 30px;
+}
 .team,
 .profession {
   font-weight: 500;
@@ -378,10 +381,6 @@ nav {
 }
 .img-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-
-.img-content {
-  margin-bottom: 20px;
 }
 
 .img-title {
